@@ -18,8 +18,8 @@ export default function Todo() {
         remult.user = session.data?.user as UserInfo
         if (session.status === "unauthenticated") signIn()
         else if (session.status === "authenticated")
-            taskRepo
-                .find({
+            return taskRepo
+                .liveQuery({
                     orderBy: {
                         createdAt: "asc",
                     },
@@ -27,7 +27,7 @@ export default function Todo() {
                         completed: undefined,
                     },
                 })
-                .then((info) => setTasks(info))
+                .subscribe((info) => setTasks(info.applyChanges))
     }, [session])
     async function addTask(event: FormEvent<HTMLFormElement>) {
         event.preventDefault()
