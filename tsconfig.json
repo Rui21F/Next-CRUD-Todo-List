@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "experimentalDecorators": true,
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -13,7 +14,7 @@
     "jsx": "preserve",
     "incremental": true,
     "plugins": [
-      {
+      { 
         "name": "next"
       }
     ],
