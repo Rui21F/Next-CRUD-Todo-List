@@ -2,7 +2,7 @@ body {
   display: flex;
   justify-content: center;
   zoom: 175%;
-  background-color: whitesmoke;
+  background-color: rgb(70, 70, 70);
 }
 
 h1 {
@@ -13,7 +13,8 @@ h1 {
 }
 
 main {
-  background-color: white;
+  background-color: rgb(47, 47, 49);
+  color: white;
   border: 1px solid lightgray;
   border-radius: 8px;
   box-shadow: 0 2px 4px #0003, 0 25px 50px #0000001a;
