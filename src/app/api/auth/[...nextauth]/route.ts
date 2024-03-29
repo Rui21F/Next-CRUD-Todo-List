@@ -7,7 +7,7 @@ const auth = NextAuth({
     Credentials({
       credentials: {
         name: {
-          placeholder: "Insert a name",
+          placeholder: "Choose Rui or Sara",
         },
       },
       authorize: (credentials) => findUser(credentials?.name) || null,

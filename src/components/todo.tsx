@@ -86,7 +86,7 @@ export default function Todo() {
                 })}
                 <div>
                     <button onClick={() => setAllCompleted(true)}>Set All Completed</button>
-                    <button onClick={() => setAllCompleted(false)}>Set All Completed</button>
+                    <button onClick={() => setAllCompleted(false)}>Set All Incompleted</button>
                 </div>
             </main>
         </div >
